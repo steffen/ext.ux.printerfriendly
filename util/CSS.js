@@ -13,14 +13,18 @@
 
 Ext.namespace('Ext.ux.PrinterFriendly.util.CSS');
 
-Ext.ux.PrinterFriendly.util.CSS.addStyleSheet = function(url){
+Ext.ux.PrinterFriendly.util.CSS.addStyleSheet = function(url, options){
     // var ss = { tag: 'link', rel: 'stylesheet', type: 'text/css', href: url };
     // Not working in Safari (DOM Exception 9):
     // Ext.DomHelper.append(document.getElementsByTagName("head")[0], ss);
+    
+    var defaults = { rel: 'stylesheet', type: 'text/css', media: 'all' };
+    var options = Ext.apply(defaults, options || {});
   
     var ss = document.createElement("link");
-    ss.setAttribute("rel", "stylesheet");
-    ss.setAttribute("type", "text/css");
+    ss.setAttribute("rel", options.rel);
+    ss.setAttribute("type", options.type);
+    ss.setAttribute("media", options.media);
     ss.setAttribute("href", url);
     document.getElementsByTagName("head")[0].appendChild(ss);
 };
