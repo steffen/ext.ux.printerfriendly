@@ -117,8 +117,31 @@ Ext.ux.grid.PrinterGridView = Ext.extend(Ext.grid.GridView, {
       this.renderMaster();
   },
   
-  scrollToTop : Ext.emptyFn, // disabled method
+  // private
+  getColumnStyle : function(col, isHeader){
+      var style = !isHeader ? (this.cm.config[col].css || '') : '';
+      // remove width style
+      // style += 'width:'+this.getColumnWidth(col)+';';
+      if(this.cm.isHidden(col)){
+          style += 'display:none;';
+      }
+      var align = this.cm.config[col].align;
+      if(align){
+          style += 'text-align:'+align+';';
+      }
+      return style;
+  },
   
-  updateSortIcon : function(col, dir){} // disabled method
+  // disabled methods
+  
+  scrollToTop : Ext.emptyFn,
+  
+  updateSortIcon : function(col, dir){},
+  
+  updateAllColumnWidths : Ext.emptyFn,
+  
+  updateColumnWidth : function(col, width){},
+  
+  updateColumnHidden : function(col, hidden){}
   
 });
