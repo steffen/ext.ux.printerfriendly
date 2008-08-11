@@ -1,0 +1,30 @@
+/*  Ext.ux.PrinterFriendly
+ *  (c) 2008 Steffen Hiller (http://www.extjswithrails.com)
+ *
+ *  License: Ext.ux.PrinterFriendly is licensed under the terms of
+ *  the Open Source LGPL 3.0 license.  Commercial use is permitted to the extent
+ *  that the code/component(s) do NOT become part of another Open Source or Commercially
+ *  licensed development library or toolkit without explicit permission.
+ *
+ *  License details: http://www.gnu.org/licenses/lgpl.html
+ *
+ *  This is an extension for the Ext JS Library, for more information see http://www.extjs.com.
+ *--------------------------------------------------------------------------*/
+
+.x-grid3-hd-row td {
+  border: none;
+  font-weight: bold;
+}
+
+.x-grid3-hd-row td,
+.x-grid3-row td,
+.x-grid3-summary-row td {
+  padding: 4px 4px 4px 4px;
+}
+
+.x-panel-bwrap,
+.x-panel-body,
+.x-grid3,
+.x-grid-panel .x-panel-body {
+  overflow: visible !important;  
+}

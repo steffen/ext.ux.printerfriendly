@@ -1,0 +1,29 @@
+0.2:
+
+- Added config.js file for customized settings
+- Added Ext.ux.PrinterFriendly.ENABLE_SHORTCUTS config option
+- Added Ext.ux.PrinterFriendly.ROOT constant
+- Added x-grid3-cell-first and x-grid3-cell-last class to header cells
+- Added config parameter to printPreview to set config options for the print preview window, i.e. the title
+- Added 'printer-window' id for printer window
+- Added init.js file, which loads dynamically all other required files
+- Added closeText and printText config option to PrinterWindow for localization purposes
+- Added hiding of body until the printing layout gets initiated, this way the user doesn't see the page without the custom printer css, which the user might add in the onPrinting function
+- Removed Ext.PRINTER_FRIENDLY_CSS_URL constant
+- Changed all internal extensions to use Ext.ux.PrinterFriendly namespace
+- Changed name of format parameter from format to _format, since it conflicts with the format parameter in Ruby on Rails
+- Changed loading of printer friendly css file, will be loaded now when loading js scripts, which prevents the user from seeing the page before the css is loaded
+- Fixed error in Safari in addStyleSheet method which caused that onPrinting is not executed
+- Fixed print button for IE, IE is printing the content of the iframe now
+- Fixed css bug in IE, empty cells will be filled with &nbsp; now, so that the css border is shown
+
+
+0.1:
+
+- Initial Release
+
+
+To Do:
+
+- Enable printing without show printPreview
+- loadMask for printing iframe/window
