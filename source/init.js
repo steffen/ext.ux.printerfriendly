@@ -24,6 +24,7 @@ Ext.ux.PrinterFriendly.addJavaScript(Ext.ux.PrinterFriendly.ROOT + '/core/EventM
 Ext.ux.PrinterFriendly.addJavaScript(Ext.ux.PrinterFriendly.ROOT + '/util/CSS.js');
 Ext.ux.PrinterFriendly.addJavaScript(Ext.ux.PrinterFriendly.ROOT + '/grid/PrinterGridPanel.js');
 Ext.ux.PrinterFriendly.addJavaScript(Ext.ux.PrinterFriendly.ROOT + '/grid/PrinterGridView.js');
+Ext.ux.PrinterFriendly.addJavaScript(Ext.ux.PrinterFriendly.ROOT + '/grid/PrinterGroupingView.js');
 Ext.ux.PrinterFriendly.addJavaScript(Ext.ux.PrinterFriendly.ROOT + '/PrinterWindow.js');
 Ext.ux.PrinterFriendly.addJavaScript(Ext.ux.PrinterFriendly.ROOT + '/Shortcuts.js');
 Ext.ux.PrinterFriendly.addJavaScript(Ext.ux.PrinterFriendly.ROOT + '/init_css.js');
