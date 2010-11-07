@@ -115,7 +115,7 @@ Ext.ux.grid.PrinterGridView = Ext.extend(Ext.grid.GridView, {
   afterRender : Ext.emptyFn,
   
   // private
-  renderUI : function(){
+  afterRenderUI : function(){
       this.renderMaster();
   },
   
