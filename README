@@ -1,5 +1,5 @@
 /*  Ext.ux.PrinterFriendly
- *  (c) 2008 Steffen Hiller (http://www.extjswithrails.com)
+ *  (c) 2008-2010 Steffen Hiller (http://www.extjswithrails.com)
  *
  *  License: Ext.ux.PrinterFriendly is licensed under the terms of
  *  the Open Source LGPL 3.0 license.  Commercial use is permitted to the extent
@@ -12,13 +12,4 @@
  *--------------------------------------------------------------------------*/
 
 
-Documentation
-http://extjs.com/learn/Extension:PrinterFriendly
-
-
-FAQ
-
-1.
-Q: Firebug says: "cm has no properties
-var colCount = cm.getColumnCount();" Why?
-A: Make sure you use the cm or colModel config option for your grid instead of the columns option.
+See http://www.sencha.com/forum/showthread.php?31524-Ext.ux.PrinterFriendly-0.2 for more information.
